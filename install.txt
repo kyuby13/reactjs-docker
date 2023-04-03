@@ -1,0 +1,13 @@
+# Build image
+
+docker build . -t dockerized-react
+
+# Notice we're now mapping port 80 inside the container 
+# to port 3000 on the host machine!
+
+docker run -p 3000:80 -d dockerized-react
+
+
+# Akses 
+
+http://localhost:3000 | http://IPaddr:3000
